@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image" href="calculator.png">
+	<title>project_calculator</title>
+	<link id="stylesheet" name="lightTheme" rel="stylesheet" type="text/css" href="calculatorLightCSS.css"> 
+	<script type="text/javascript" src="calculatorJS.js"></script>
+</head>
+<body>
+
+	<div id="switch">
+		<input type="button" name="" value="Theme Switcher" onclick="themeSwitcher()">
+	</div>
+
+	<div id="container">
+		
+		<div id="display_box">
+			<input id="input_field" type="text" name="" placeholder="|">
+			<input id="result_field" type="text" name="" placeholder="=" disabled="disabled">
+		</div>
+
+
+		<div id="button_box">
+			<input class="button" id="cut" 			onclick="remove()" 	type="button" name="" value="C" style="color:red">
+			<input class="button" id="back" 		onclick="cut()" 	type="button" name="" value="<">
+			<input class="button" id="modulus" 		onclick="input('%')" 	type="button" name="" value="%">
+			<input class="button" id="divider"		onclick="input('/')" 	type="button" name="" value="/">
+			<input class="button" id="seven" 		onclick="input(7)" 	type="button" name="" value="7">
+			<input class="button" id="eight" 		onclick="input(8)" 	type="button" name="" value="8">
+			<input class="button" id="nine" 		onclick="input(9)" 	type="button" name="" value="9">
+			<input class="button" id="multiplier" 	onclick="input('*')" 	type="button" name="" value="x">
+			<input class="button" id="four"    		onclick="input(4)" 	type="button" name="" value="4">
+			<input class="button" id="five" 		onclick="input(5)" 	type="button" name="" value="5">
+			<input class="button" id="six" 		    onclick="input(6)" 	type="button" name="" value="6">
+			<input class="button" id="minus" 		onclick="input('-')" 	type="button" name="" value="-">
+			<input class="button" id="one" 			onclick="input(1)" 	type="button" name="" value="1">
+			<input class="button" id="two" 			onclick="input(2)" 	type="button" name="" value="2">
+			<input class="button" id="three" 		onclick="input(3)" 	type="button" name="" value="3">
+			<input class="button" id="plus" 		onclick="input('+')" 	type="button" name="" value="+">
+			<input class="button" id="point" 		onclick="input('.')" 	type="button" name="" value=".">
+			<input class="button" id="zero" 		onclick="input(0)" 	type="button" name="" value="0">
+			<input class="button" id="equall" 		onclick="evaluation()" 	type="button" name="" value="=">
+		</div>
+
+	</div>
+
+</body>
+</html>
